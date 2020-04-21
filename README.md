@@ -1,3 +1,5 @@
+![Node.js CI](https://github.com/randomorder/mapstore-covid-us/workflows/Node.js%20CI/badge.svg)
+
 # MapStore COVID US Dashboard
 Experimental Dashboard for COVID-19 US Emergency built using [MapStore](https://mapstore.geo-solutions.it/mapstore/#/)
 
