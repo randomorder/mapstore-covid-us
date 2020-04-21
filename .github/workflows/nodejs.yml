@@ -29,3 +29,13 @@ jobs:
     - run: npm run build
       env:
         CI: true
+    - name: Build site assets
+      working-directory: ${{ github.workspace }}
+      run: ls -laR
+
+#    - name: Upload to release
+#      uses: JasonEtco/upload-to-release@master
+#      with:
+#        args: my-image.tar
+#      env:
+#        GITHUB_TOKEN: ${{ secrets.TOKEN }}
