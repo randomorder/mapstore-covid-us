@@ -36,6 +36,16 @@ jobs:
       working-directory: ${{ github.workspace }}
       run: tar czvf ./build.tar.gz ./build
 
+    - name: Deploy on DEV
+      uses: appleboy/scp-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        port: ${{ secrets.PORT }}
+        source: "./build/*"
+        target: "test"
+
     - name: Store Artifact
       uses: actions/upload-artifact@v1
       with:
