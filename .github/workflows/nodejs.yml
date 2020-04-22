@@ -44,7 +44,7 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         source: "./build/*"
-        target: "test"
+        target: "/home/www/share/mockups/mapstore2/mapstore-covid-us/test"
 
     - name: Store Artifact
       uses: actions/upload-artifact@v1
